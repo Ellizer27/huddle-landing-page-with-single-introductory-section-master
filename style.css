@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("/huddle-landing-page-with-single-introductory-section-master/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    background-color: hsl(257, 40%, 49%);
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+.container {
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+#huddle-icon {
+    height: 40%;
+    width: 40%;
+    display: block;
+}
+
+#illustration {
+    height: 100%;
+    width: 90%;
+    margin: 5rem auto 3rem auto;
+}
+
+.box-right-side h1 {
+    font-family: "Poppins", sans-serif;
+    margin: 2rem auto .25rem auto;
+    padding: 1rem;
+}
+
+.box-right-side p {
+    font-family: "Open Sans", sans-serif;
+    opacity: 0.9;
+    line-height: 1.6;
+    padding: .25rem 2rem;
+}
+
+.register-btn {
+    border-radius: 2rem;
+    padding: .80rem 0;
+    width: 50%;
+    border: none;
+    margin: 2rem auto;
+    font-family: "Poppins", sans-serif;
+    color: hsl(257, 40%, 49%);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.register-btn:hover {
+    color: white;
+    background-color: hsl(257, 40%, 49%);
+    border: 1px solid white;
+    transition: all 0.5s ease-in-out;
+}
+
+.facebook-icon, .twitter-icon, .instagram-icon {
+    margin: 2rem .5rem 1rem 0;
+    padding: .40rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    body {
+        background: url("/huddle-landing-page-with-single-introductory-section-master/images/bg-desktop.svg");
+        background-color: hsl(257, 40%, 49%);
+        background-repeat: no-repeat;
+    }
+    .container {
+        display: flex;
+        padding: 2.5rem;
+        margin: .5rem 2.5rem 1rem 2rem;
+    }
+
+    #huddle-icon {
+        height: 10%;
+        width: 30%;    
+    }
+
+    #illustration {
+        height: 80%;
+        width: 100%;
+        margin: 5rem auto 1rem auto;
+    }
+
+    .box-right-side {
+        height: 100%;
+        width: 40%;
+        text-align: start;
+        padding: .5rem;
+        margin: 9rem 1rem 2rem 1rem;
+    }
+
+    .box-right-side h1 {
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    .register-btn {
+        width: 30%;
+        margin: .60rem 1.5rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+
+    .social-icon {
+        position: absolute;
+        bottom: 5%;
+        left: 80%;
+    }
+}
